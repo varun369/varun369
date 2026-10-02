@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/varun-readme-hero.svg" alt="Varun Pratap Bhardwaj — AI Reliability Engineering" width="100%" />
+</p>
+
 # Varun Pratap Bhardwaj — AI Reliability Engineering
 
 I build [Qualixar](https://github.com/qualixar), my independent research initiative for AI agent reliability: decision routing, governed memory, behavioral contracts, statistical testing and verified execution.
