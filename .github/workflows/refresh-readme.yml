@@ -1,0 +1,36 @@
+name: Refresh profile README
+
+# Pulls the product list and builder from the public qualixar/.github repo,
+# so adding a product there updates this profile too. No cross-repo token needed.
+on:
+  schedule:
+    - cron: "37 3 * * *" # daily, after the qualixar org refresh
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: qualixar/.github
+          path: _qualixar
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python _qualixar/scripts/build_readmes.py --personal README.md
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- README.md; then echo "No changes"; exit 0; fi
+          git config user.name "varun369-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: refresh profile README stats"
+          git push

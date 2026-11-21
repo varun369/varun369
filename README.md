@@ -1,55 +1,71 @@
 <p align="center">
-  <img src="./assets/varun-readme-hero.svg" alt="Varun Pratap Bhardwaj — AI Reliability Engineering" width="100%" />
+  <img src="./assets/varun-readme-hero.svg" alt="Varun Pratap Bhardwaj: AI Reliability Engineering" width="100%" />
 </p>
 
-# Varun Pratap Bhardwaj — AI Reliability Engineering
+# Varun Pratap Bhardwaj
 
-I build [Qualixar](https://github.com/qualixar), my independent research initiative for AI agent reliability: decision routing, governed memory, behavioral contracts, statistical testing and verified execution.
+I work on **AI Reliability Engineering**: how to know an AI agent did what it says it did. That means memory you can audit, contracts an agent cannot quietly break, tests built for answers that change from run to run, and loops that end on an independent check instead of the agent's own word.
 
-**10 core products · 10 public arXiv preprints**
+I founded [Qualixar](https://github.com/qualixar), my independent research initiative, where I publish the tools and the papers behind them. My day job is enterprise solution architecture: 16 years in IT, and 5× Global Technology Innovation Award winner (2021–2025).
 
-Start with the task you need to solve. Each product below links to its source, practical setup and supporting evidence.
+**17** open-source products · **10** arXiv preprints · **497** GitHub stars
 
-[Qualixar](https://qualixar.com) · [My work and writing](https://www.varunpratap.com) · [SuperLocalMemory](https://www.superlocalmemory.com) · [AgentAssert](https://agentassert.com)
+[qualixar.com](https://qualixar.com) · [varunpratap.com](https://www.varunpratap.com) · [YouTube](https://www.youtube.com/@Qualixar-AI) · [X](https://x.com/varunPbhardwaj) · [LinkedIn](https://linkedin.com/in/varun-pratap-bhardwaj-7ab63742) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=CRRPXkwAAAAJ)
 
-## All 10 products
+### ⭐ [SuperLocalMemory](https://github.com/qualixar/superlocalmemory): the flagship
 
-Choose the capability your workflow needs, then follow the setup, examples or research in **Resources**. Product names link directly to the source repositories.
+Local-first memory for AI agents. Claude Code, Codex, Cursor and other MCP clients keep project context across sessions, and every recall points back to its source. **201k+ downloads** across npm and PyPI. Backed by 4 arXiv preprints.
 
-| Product | Description | Focus | When to use it | Resources |
-| --- | --- | --- | --- | --- |
-| [Jev Decision Layer](https://github.com/qualixar/jev-decision-layer) | Returns advisory choices from explicit options, with reasons, constraints and decision receipts. | Decision routing | Choose a task, tool, model tier or review route. | [Product](https://qualixar.com/products/jev-decision-layer)<br>[Recipes](https://qualixar.com/products/jev-decision-layer/recipes)<br>[Guide](https://github.com/qualixar/jev-decision-layer/blob/main/docs/WORKING_WITH_JEV.md) |
-| [Bounded Loops](https://github.com/qualixar/bounded-loops) | Runs agent loops and graphs within declared limits; independent gates check completion and hash-chained ledgers record results. | Verified execution | Fix failing tests or repeat a workflow until its acceptance check passes. | [Product](https://qualixar.com/products/bounded-loops)<br>[Recipes](https://qualixar.com/products/bounded-loops/recipes)<br>[Proof](https://github.com/qualixar/bounded-loops/blob/main/docs/QUICK_PROOF.md) |
-| [SuperLocalMemory](https://github.com/qualixar/superlocalmemory) | A governed memory control plane combining persistent context, multi-channel retrieval, knowledge graphs and workspace isolation. | Memory & governance | Carry project knowledge across agent sessions while controlling access, retention and context. | [Product](https://www.superlocalmemory.com)<br>[Workflows](https://www.superlocalmemory.com/recipes)<br>[Research](https://www.superlocalmemory.com/research) |
-| [SLM MCP Hub](https://github.com/qualixar/slm-mcp-hub) | Federates MCP servers behind three discovery-and-call tools, with shared backends and on-demand tool lookup. | Tool federation | Connect multiple clients to many servers without loading every tool definition up front. | [Product](https://qualixar.com/products/slm-mcp-hub)<br>[Setup](https://github.com/qualixar/slm-mcp-hub#quick-start)<br>[Routing](https://github.com/qualixar/slm-mcp-hub#routing-modes) |
-| [SkillFortify](https://github.com/qualixar/skillfortify) | Scans agent skills and MCP configurations using capability analysis, dependency checks and supply-chain reports. | Skill security | Inspect skills before installation and add security checks to your delivery pipeline. | [Product](https://qualixar.com/products/skillfortify)<br>[Guide](https://github.com/qualixar/skillfortify#quick-start)<br>[Synthetic benchmark](https://github.com/qualixar/skillfortify/blob/main/benchmarks/RESULTS.md) |
-| [AgentAssert](https://github.com/qualixar/agentassert-abc) | Defines behavioral contracts and enforces hard or soft constraints against application-supplied agent state. | Runtime contracts | Check permissions, limits and required signals at an action boundary. | [Product](https://agentassert.com)<br>[Templates](https://agentassert.com/recipes/)<br>[Guide](https://agentassert.com/getting-started/) |
-| [AgentAssay](https://github.com/qualixar/agentassay) | Measures behavioral regressions with execution traces, statistical verdicts and adaptive trial budgets. | Testing & measurement | Compare agent behavior after changing prompts, models or tools; reuse existing traces. | [Product](https://qualixar.com/products/agentassay)<br>[Guide](https://github.com/qualixar/agentassay#quick-start-pick-your-framework)<br>[Paper](https://arxiv.org/abs/2603.02601) |
-| [Agent Amplifier](https://github.com/qualixar/agent-amplifier) | Adds effort routing, goal anchoring, convergence checks and token budgets to coding-agent sessions. | Coding runtime | Keep coding sessions focused and manage effort through supported host adapters. | [Product](https://qualixar.com/products/agent-amplifier)<br>[Setup](https://github.com/qualixar/agent-amplifier#install-60-seconds)<br>[Post](https://qualixar.com/blog/agent-amplifier-v1-launch) |
-| [SLM Mesh](https://github.com/qualixar/slm-mesh) | Connects agents across harnesses with peer messages, shared state and advisory file locks, locally or across a LAN. | Agent coordination | Coordinate work between agent sessions on one computer or multiple networked machines. | [Product](https://qualixar.com/products/slm-mesh)<br>[Setup](https://github.com/qualixar/slm-mesh#multi-machine-setup)<br>[Post](https://qualixar.com/blog/slm-multi-machine-release) |
-| [Qualixar OS](https://github.com/qualixar/qualixar-os) | Designs and runs agent teams, evaluates outputs through a judge pipeline, and retries with structured feedback. | Orchestration & judging | Run multi-agent tasks with quality review, model routing and budget tracking. | [Product](https://qualixar.com/products/qualixar-os)<br>[Setup](https://github.com/qualixar/qualixar-os#install-in-30-seconds)<br>[Post](https://qualixar.com/blog/built-an-os-for-ai-agents) |
+[![stars](https://img.shields.io/github/stars/qualixar/superlocalmemory?style=for-the-badge&label=stars&color=f5b301&labelColor=2b2b2b)](https://github.com/qualixar/superlocalmemory) [![npm](https://img.shields.io/npm/dt/superlocalmemory?style=for-the-badge&label=npm&color=cb3837&labelColor=2b2b2b)](https://www.npmjs.com/package/superlocalmemory) [![pypi](https://img.shields.io/pepy/dt/superlocalmemory?style=for-the-badge&label=pypi&color=3775a9&labelColor=2b2b2b)](https://pypi.org/project/superlocalmemory/) [![release](https://img.shields.io/github/v/release/qualixar/superlocalmemory?style=for-the-badge&label=release&color=3b82f6&labelColor=2b2b2b)](https://github.com/qualixar/superlocalmemory/releases)
 
-Use each repository’s setup guide for supported hosts and operating modes. Benchmark results apply to their published datasets and protocols; the SkillFortify benchmark linked above uses generated specimens.
+```bash
+npm install -g superlocalmemory
+```
 
-## Research: 10 public arXiv preprints
+### Flagship work
 
-These public arXiv records are preprints. Read each paper for its assumptions, version, experimental scope and limitations. Listing a paper beside a product does not establish that every current feature was evaluated in that paper.
+| Product | What it does | Proof |
+| --- | --- | --- |
+| **[SuperLocalMemory](https://github.com/qualixar/superlocalmemory)**<br><sub>Memory · [Start →](https://www.superlocalmemory.com)</sub> | Governed, local-first memory for agents, with source-linked recall and workspace isolation. | ![stars](https://img.shields.io/github/stars/qualixar/superlocalmemory?style=flat&label=%E2%98%85&color=f5b301&labelColor=2b2b2b) ![release](https://img.shields.io/github/v/release/qualixar/superlocalmemory?style=flat&label=&color=3b82f6&labelColor=2b2b2b)<br><sub>4 papers</sub> |
+| **[brief2mp4 + brief2motion](https://github.com/qualixar/brief2mp4)**<br><sub>Motion · [Start →](https://github.com/qualixar/brief2mp4#quick-start)</sub> | Write a brief in Claude Code or Codex, get a checked MP4 or a website that moves. 82 art forms; brief2motion installs with it. | ![stars](https://img.shields.io/github/stars/qualixar/brief2mp4?style=flat&label=%E2%98%85&color=f5b301&labelColor=2b2b2b) ![release](https://img.shields.io/github/v/release/qualixar/brief2mp4?style=flat&label=&color=3b82f6&labelColor=2b2b2b) |
+| **[Bounded Loops](https://github.com/qualixar/bounded-loops)**<br><sub>Loops & graphs · [Start →](https://github.com/qualixar/bounded-loops/blob/main/docs/QUICK_PROOF.md)</sub> | Agent loops and graphs that stop on an independent gate, with spend bounds set before the run and a hash-chained ledger. | ![stars](https://img.shields.io/github/stars/qualixar/bounded-loops?style=flat&label=%E2%98%85&color=f5b301&labelColor=2b2b2b) ![release](https://img.shields.io/github/v/release/qualixar/bounded-loops?style=flat&label=&color=3b82f6&labelColor=2b2b2b)<br><sub>1 paper</sub> |
+| **[Qualixar OS](https://github.com/qualixar/qualixar-os)**<br><sub>Orchestration · [Start →](https://qualixar.com/products/qualixar-os)</sub> | Runs agent teams across multi-agent topologies, routes models by cost and quality, and judges outputs before they ship. | ![stars](https://img.shields.io/github/stars/qualixar/qualixar-os?style=flat&label=%E2%98%85&color=f5b301&labelColor=2b2b2b)<br><sub>1 paper</sub> |
+| **[SkillFortify](https://github.com/qualixar/skillfortify)**<br><sub>Security · [Start →](https://qualixar.com/products/skillfortify)</sub> | Scans agent skills and MCP configs before they run: capability analysis, dependency checks, a bill of materials. | ![stars](https://img.shields.io/github/stars/qualixar/skillfortify?style=flat&label=%E2%98%85&color=f5b301&labelColor=2b2b2b) ![release](https://img.shields.io/github/v/release/qualixar/skillfortify?style=flat&label=&color=3b82f6&labelColor=2b2b2b)<br><sub>1 paper</sub> |
+| **[AgentAssert](https://github.com/qualixar/agentassert-abc)**<br><sub>Contracts · [Start →](https://agentassert.com/getting-started/)</sub> | Behavioral contracts for agents: preconditions, invariants and recovery checked at runtime, at the step that broke them. | ![stars](https://img.shields.io/github/stars/qualixar/agentassert-abc?style=flat&label=%E2%98%85&color=f5b301&labelColor=2b2b2b) ![release](https://img.shields.io/github/v/release/qualixar/agentassert-abc?style=flat&label=&color=3b82f6&labelColor=2b2b2b)<br><sub>2 papers</sub> |
+| **[AgentAssay](https://github.com/qualixar/agentassay)**<br><sub>Testing · [Start →](https://qualixar.com/products/agentassay)</sub> | Regression testing for non-deterministic agents: statistical verdicts over repeated runs, on a fraction of the tokens. | ![stars](https://img.shields.io/github/stars/qualixar/agentassay?style=flat&label=%E2%98%85&color=f5b301&labelColor=2b2b2b) ![release](https://img.shields.io/github/v/release/qualixar/agentassay?style=flat&label=&color=3b82f6&labelColor=2b2b2b)<br><sub>1 paper</sub> |
 
-| Paper | arXiv | Related project |
+### Shipped recently
+
+| Product | What it does | Proof |
+| --- | --- | --- |
+| **[Claude Bot Bridge](https://github.com/qualixar/claude-bot-bridge)**<br><sub>Bots · [Start →](https://qualixar.com/products/claude-bot-bridge)</sub> | Claude Code hands tasks to Meta's Muse: a quick chat on your Mac, or a job on a task board you host. | ![stars](https://img.shields.io/github/stars/qualixar/claude-bot-bridge?style=flat&label=%E2%98%85&color=f5b301&labelColor=2b2b2b) ![release](https://img.shields.io/github/v/release/qualixar/claude-bot-bridge?style=flat&label=&color=3b82f6&labelColor=2b2b2b)<br><sub>shipped 20 Nov 2026</sub> |
+| **[touchless-mac](https://github.com/qualixar/touchless-mac)**<br><sub>Interfaces · [Start →](https://qualixar.com/products/touchless-mac)</sub> | Control your Mac with your hand through the built-in camera. Fully local, written in Rust, with a video course. | ![stars](https://img.shields.io/github/stars/qualixar/touchless-mac?style=flat&label=%E2%98%85&color=f5b301&labelColor=2b2b2b) ![release](https://img.shields.io/github/v/release/qualixar/touchless-mac?style=flat&label=&color=3b82f6&labelColor=2b2b2b)<br><sub>shipped 30 Oct 2026</sub> |
+| **[Craft Studio Setup](https://github.com/qualixar/craft-studio-setup)**<br><sub>Creative tools · [Start →](https://github.com/qualixar/craft-studio-setup)</sub> | One command installs free Office and Adobe alternatives on a Mac and connects them to Claude over MCP. | ![stars](https://img.shields.io/github/stars/qualixar/craft-studio-setup?style=flat&label=%E2%98%85&color=f5b301&labelColor=2b2b2b) ![release](https://img.shields.io/github/v/release/qualixar/craft-studio-setup?style=flat&label=&color=3b82f6&labelColor=2b2b2b)<br><sub>shipped 22 Oct 2026</sub> |
+| **[ModStage](https://github.com/qualixar/modstage)**<br><sub>Workbench · [Start →](https://qualixar.com/products/modstage)</sub> | Run Codex, Grok, Gemini, Muse and other coding agents side by side inside Claude Code; watch, steer and approve each step. | ![stars](https://img.shields.io/github/stars/qualixar/modstage?style=flat&label=%E2%98%85&color=f5b301&labelColor=2b2b2b) ![release](https://img.shields.io/github/v/release/qualixar/modstage?style=flat&label=&color=3b82f6&labelColor=2b2b2b)<br><sub>shipped 16 Oct 2026</sub> |
+| **[SuperLocalMemory plugin](https://github.com/qualixar/superlocalmemory-plugin)**<br><sub>Memory · [Start →](https://github.com/qualixar/superlocalmemory-plugin)</sub> | SuperLocalMemory as a Claude Code plugin: memory, skills and hooks in one install. | ![stars](https://img.shields.io/github/stars/qualixar/superlocalmemory-plugin?style=flat&label=%E2%98%85&color=f5b301&labelColor=2b2b2b)<br><sub>shipped 14 Oct 2026</sub> |
+
+All 17 products, with setup guides, are on **[github.com/qualixar](https://github.com/qualixar)**.
+
+### Research
+
+<details>
+<summary><b>All 10 research papers</b> (public arXiv preprints)</summary>
+
+| Paper | arXiv | Product |
 | --- | --- | --- |
 | Bounded Loops: Pre-Run Spend Bounds, Proved Termination, and Verified Completion for Agent Harnesses | [2609.27871](https://arxiv.org/abs/2609.27871) | Bounded Loops |
 | Agent Behavioral Contracts II: Certifying Compositional Reliability Without Assuming Independence | [2608.12895](https://arxiv.org/abs/2608.12895) | AgentAssert |
 | SuperLocalMemory 4.0: The Governed Memory Operating System for AI Agents | [2608.08253](https://arxiv.org/abs/2608.08253) | SuperLocalMemory |
 | Qualixar OS: A Universal Operating System for AI Agent Orchestration | [2604.06392](https://arxiv.org/abs/2604.06392) | Qualixar OS |
-| SuperLocalMemory V3.3: The Living Brain -- Biologically-Inspired Forgetting, Cognitive Quantization, and Multi-Channel Retrieval for Zero-LLM Agent Memory Systems | [2604.04514](https://arxiv.org/abs/2604.04514) | SuperLocalMemory |
+| SuperLocalMemory V3.3: The Living Brain: Biologically-Inspired Forgetting, Cognitive Quantization, and Multi-Channel Retrieval for Zero-LLM Agent Memory Systems | [2604.04514](https://arxiv.org/abs/2604.04514) | SuperLocalMemory |
 | SuperLocalMemory V3: Information-Geometric Foundations for Zero-LLM Enterprise Agent Memory | [2603.14588](https://arxiv.org/abs/2603.14588) | SuperLocalMemory |
 | AgentAssay: Token-Efficient Regression Testing for Non-Deterministic AI Agent Workflows | [2603.02601](https://arxiv.org/abs/2603.02601) | AgentAssay |
+| SuperLocalMemory: Privacy-Preserving Multi-Agent Memory with Bayesian Trust Defense Against Memory Poisoning | [2603.02240](https://arxiv.org/abs/2603.02240) | SuperLocalMemory |
 | Formal Analysis and Supply Chain Security for Agentic AI Skills | [2603.00195](https://arxiv.org/abs/2603.00195) | SkillFortify |
 | Agent Behavioral Contracts: Formal Specification and Runtime Enforcement for Reliable Autonomous AI Agents | [2602.22302](https://arxiv.org/abs/2602.22302) | AgentAssert |
-| SuperLocalMemory: Privacy-Preserving Multi-Agent Memory with Bayesian Trust Defense Against Memory Poisoning | [2603.02240](https://arxiv.org/abs/2603.02240) | SuperLocalMemory |
 
-## Build with the tools
+arXiv records are preprints, not peer review. Each paper states its assumptions, versions and limits.
 
-Try a recipe, inspect the source, and share the result in [Qualixar Discussions](https://github.com/orgs/qualixar/discussions). Ask setup questions in Q&A, propose a workflow in Ideas, or report a reproducible bug in the relevant repository.
+</details>
 
-If a product helps your work, star its repository to follow it. Access and participation remain open without a star.
+<sub>Tables, counts and downloads refresh automatically every day from [one product list](https://github.com/qualixar/.github/blob/main/data/products.json). Last build: 2026-11-21.</sub>
